@@ -7,12 +7,12 @@ export const Habilidades  =()=>{
     
     {
         Herramientas.map((h) => (
-            <div className="flex flex-col gap-y-4">
+            <div key={h.titulo} className="flex flex-col gap-y-4">
                 <h3 className="uppercase font-semibold">{h.titulo}</h3>
                 <div className="flex flex-wrap  gap-2 text-sm ">
                     {
-                        h.heramienta.map((habilidad) => (
-                            <Minibutton texto={habilidad} />
+                        h.heramienta.map((habilidad, idx) => (
+                            <Minibutton key={idx} texto={habilidad} />
                         ))
                     }
                 </div>
