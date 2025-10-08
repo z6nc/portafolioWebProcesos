@@ -10,8 +10,8 @@ export function Navbar() {
                     <h1 className="text-4xl xl:text-3xl 2xl:text-4xl font-bold">Andres Daniel Velasquez Arotinco</h1>
                     <div className="flex-wrap flex gap-2 text-sm xl:text-xs 2xl:text-sm">
                         {
-                            AreasDeTrabajo.map((area) => (
-                                <Minibutton texto={area.area} />
+                            AreasDeTrabajo.map((area ) => (
+                                <Minibutton key={area.area} texto={area.area} />
                             ))
                         }
                     </div>
@@ -22,8 +22,9 @@ export function Navbar() {
 
                 <section className="flex flex-col gap-y-9 ">
                     {
-                        ItemNavbar.map((item) => (
+                        ItemNavbar.map((item ) => (
                             <a
+                                key={item.item}
                                 href={item.urlItem}
                                 className="hover:text-amber-300 hover:scale-105 transition-transform hover:font-bold text-sm"
                             >
@@ -38,6 +39,7 @@ export function Navbar() {
                 {
                     RedesSociales.map((red) => (
                         <a
+                            key={red.NickName}
                             href={red.url}
                             target="_blank"
                             rel="noopener noreferrer"
