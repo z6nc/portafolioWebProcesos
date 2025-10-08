@@ -7,9 +7,10 @@ export const Contacto = () => {
             <p className=" text-gray-500 w-auto md:w-4xl">Estoy disponible para nuevos proyectos y colaboraciones. No dudes en contactarme para discutir cómo puedo contribuir a tu equipo o proyecto.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {
-                    RedesSociales.map((red) => (
+                    RedesSociales.map((red, index) => (
                         <a
                             href={red.url}
+                            key={index}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group  overflow-hidden "
