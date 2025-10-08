@@ -1,15 +1,15 @@
-import './../styles/App.css'
-import { Navbar } from '../components/layout/Navbar'
-import { Main } from '../components/layout/Main/main'
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Inicio from './Inicio';
+import DetalleProyecto from './DetalleProyecto';
 function App() {
-
   return (
-    <div className="flex flex-col md:flex-row min-h-screen w-full">
-      <Navbar />
-      <Main />
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/proyecto/:id" element={<DetalleProyecto />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
