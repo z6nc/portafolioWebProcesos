@@ -1,5 +1,6 @@
 import { Minibutton } from "../../common/minibutton/minibutton"
 import { ListaProyectos } from "../../../data/proyectos"
+import { Link } from "react-router-dom"
 export const Proyectos = () => {
     return (
 
@@ -10,9 +11,9 @@ export const Proyectos = () => {
             <div className="flex flex-wrap gap-4 text-gray-500">
                 {
                     [...ListaProyectos].reverse().map((proyecto) => (
-                        <a
-                            href={proyecto.url}
-                            target="_blank"
+                        <Link
+                            to={proyecto.url}
+                            key={proyecto.nombreProyecto}
                             className="flex flex-col w-auto md:w-xl border border-gray-200 rounded-lg p-5 md:p-9 gap-y-3 hover:shadow-lg transition-shadow duration-300"
                         >
                             <p className="text-xs ">{proyecto.Año}</p>
@@ -22,11 +23,11 @@ export const Proyectos = () => {
                                 {proyecto.datoImportante}
                             </span>
                             <div className="flex flex-wrap gap-2 text-xs">
-                                {proyecto.tecnologias.map((tech) => (
-                                    <Minibutton texto={tech} />
+                                {proyecto.tecnologias.map((tech, idx) => (
+                                    <Minibutton key={idx} texto={tech} />
                                 ))}
                             </div>
-                        </a>
+                        </Link>
                     ))
                 }
             </div>
