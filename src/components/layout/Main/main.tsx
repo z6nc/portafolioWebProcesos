@@ -6,7 +6,7 @@ import { Contacto } from "./Contacto"
 export function Main() {
     return (
         <main
-            className="flex-1 flex flex-col p-6 bg-gray-100 xl:px-2 2xl:px-20 py-20 gap-y-9"
+            className="flex-1 flex flex-col p-6  xl:px-2 2xl:px-20 py-20 gap-y-9"
         >
             <SobreMi />
             <Experiencia />
