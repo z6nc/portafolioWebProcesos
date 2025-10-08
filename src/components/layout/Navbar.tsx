@@ -4,7 +4,7 @@ import { ItemNavbar } from "../../data/ItemNavbar.ts"
 import { Minibutton } from "../common/minibutton/minibutton.tsx"
 export function Navbar() {
     return (
-        <nav className=" md:w-xl 2xl:w-[450px] flex flex-col px-9 py-9 md:py-20 justify-between items-center  md:sticky top-0 h-screen ">
+        <nav className=" md:w-xl 2xl:w-[450px] bg-white flex flex-col px-9 py-9 md:py-20 justify-between items-center  md:sticky top-0 h-screen ">
             <div className="flex flex-col gap-y-9">
                 <section className="flex flex-col gap-y-4">
                     <h1 className="text-4xl xl:text-3xl 2xl:text-4xl font-bold">Andres Daniel Velasquez Arotinco</h1>
