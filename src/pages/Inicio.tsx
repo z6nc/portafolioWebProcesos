@@ -4,7 +4,7 @@ import { Main } from '../components/layout/Main/main'
 export default function Inicio() {
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen w-full">
+    <div className="flex flex-col md:flex-row min-h-screen w-full bg-gray-100" >
       <Navbar />
       <Main />
     </div>
