@@ -25,7 +25,7 @@ const ProyectoViewer = ({ proyectoId }: ProjectViewerProps) => {
 
 
       <span className="text-gray-600 italic bg-gray-50 p-2 border-l-4 border-yellow-500">{FindProyecto?.datoImportante || FindProyecto?.datoAviso}</span>
-      <VideoPlayer url="https://res.cloudinary.com/dleem7osr/video/upload/v1740675379/videoWeatherApp_ncqbj8.mp4" />
+      <VideoPlayer url={FindProyecto?.video} />
       <div>
         {FindProyecto?.Preguntas && (
           <>
