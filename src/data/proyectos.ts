@@ -22,7 +22,7 @@ export const ListaProyectos: PropsProyecto[] = [
         id: "MindStack",
         nombreProyecto: "MindStack",
         informacion: "MindStack es una plataforma que reúne en un solo lugar comandos, snippets y guías rápidas para React.js.",
-        video: "https://res.cloudinary.com/dleem7osr/video/upload/v1760823360/1017_ovwphj.mp4",
+        video: "https://res.cloudinary.com/dleem7osr/video/upload/v1760826652/mindstack_qdubmd.mp4",
         informacionExtendida: "MindStack es una plataforma que recopila comandos de instalación de paquetes de diferentes tipos para el ecosistema de React, como React Router, React Coin, Tailwind, React Icons, entre otros. Facilita el acceso rápido a información útil para desarrolladores que trabajan con React, mejorando la productividad y organización del trabajo.",
         Preguntas: [
             {
